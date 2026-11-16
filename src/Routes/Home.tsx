@@ -345,6 +345,9 @@ function Home() {
                 <UIText.Basic size="md" className="mt-10 mb-6 pl-2" align="left" as="h3" weight="bold">
                   ✅ Claude AI를 활용한 독서 기록 앱 구현
                 </UIText.Basic>
+                <UIText.Basic size="xs" className={styles["project-popup-link"]} align="left" as="p">
+                  테스트 로그인: <a href="https://booklog-azure.vercel.app/login?test" target="_blank" rel="noopener noreferrer">테스트 계정으로 체험하기</a>
+                </UIText.Basic>
                 <UITextList.Nested
                   color="black"
                   align="left"
@@ -390,7 +393,7 @@ function Home() {
         >
           <UITable.Default className="mt-4" variant="type1" size="md" align="left">
             <UITable.Table>
-              <UITable.Caption>북로그 프로젝트 기간, 사용 툴, 웹주소, 저장소</UITable.Caption>
+              <UITable.Caption>북로그 프로젝트 기간, 사용 툴, 웹주소, 테스트 로그인, 저장소</UITable.Caption>
               <UITable.Tbody>
                 <UITable.Tr>
                   <UITable.Th scope="row">프로젝트 기간</UITable.Th>
@@ -403,6 +406,10 @@ function Home() {
                 <UITable.Tr>
                   <UITable.Th scope="row">웹주소</UITable.Th>
                   <UITable.Td><a href="https://booklog-azure.vercel.app/" target="_blank" rel="noopener noreferrer">https://booklog-azure.vercel.app/</a></UITable.Td>
+                </UITable.Tr>
+                <UITable.Tr>
+                  <UITable.Th scope="row">테스트 로그인</UITable.Th>
+                  <UITable.Td><a href="https://booklog-azure.vercel.app/login?test" target="_blank" rel="noopener noreferrer">테스트 계정으로 체험하기</a></UITable.Td>
                 </UITable.Tr>
                 <UITable.Tr>
                   <UITable.Th scope="row">저장소</UITable.Th>

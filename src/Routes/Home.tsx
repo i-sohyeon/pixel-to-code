@@ -330,6 +330,99 @@ function Home() {
     },
 
     {
+      id: "booklog",
+      categories: ["personal"],
+      content: (
+        <SlideItem
+          title="북로그 (BookLog)"
+          titleColor="white"
+          imgSrc={`${import.meta.env.BASE_URL}assets/images/swiper/booklog.webp`}
+          bgColor="plum"
+          onClick={() =>
+            handleOpenPopup(
+              <div>
+                <img src={`${import.meta.env.BASE_URL}assets/images/swiper/booklog.webp`} alt="BookLog 프로젝트 커버" />
+                <UIText.Basic size="md" className="mt-10 mb-6 pl-2" align="left" as="h3" weight="bold">
+                  ✅ Claude AI를 활용한 독서 기록 앱 구현
+                </UIText.Basic>
+                <UITextList.Nested
+                  color="black"
+                  align="left"
+                  nestedItems={[
+                    {
+                      id: "booklog-overview",
+                      name: "프로젝트 개요",
+                      children: [
+                        { id: "booklog-goal", name: "- 읽고 싶은 책을 발견하는 순간부터 완독 후 감상을 남기기까지, 한 곳에서 이어갈 수 있는 독서 기록 앱" },
+                      ],
+                    },
+                    {
+                      id: "booklog-features",
+                      name: "주요 기능",
+                      children: [
+                        { id: "booklog-search", name: "- 제목이나 저자로 책을 검색하고, 검색 결과에서 원하는 책을 선택해 기록 시작" },
+                        { id: "booklog-library", name: "- 읽고 싶어요 · 읽는 중 · 다 읽었어요 세 가지 상태로 서재를 분류하고, 완독한 책에는 별점과 한 줄 평을 기록" },
+                        { id: "booklog-filter", name: "- 서재에서 독서 상태, 태그, 별점으로 기록을 골라보고 리스트와 캘린더 보기로 전환" },
+                      ],
+                    },
+                    {
+                      id: "booklog-ui",
+                      name: "반응형 UI 및 공통 컴포넌트",
+                      children: [
+                        { id: "booklog-layout", name: "- 데스크톱 사이드바와 모바일 하단 탭으로 화면 크기에 맞게 메뉴를 배치하고, 주요 화면에서 바로 책을 기록할 수 있도록 구성" },
+                        { id: "booklog-components", name: "- Claude AI를 활용해 React·TypeScript로 탭, 별점 입력, 기록 패널을 구현하고, SCSS Modules로 스타일을 관리" },
+                      ],
+                    },
+                    {
+                      id: "booklog-implementation",
+                      name: "데이터 저장 및 배포",
+                      children: [
+                        { id: "booklog-storage", name: "- 독서 상태와 기록을 여러 화면에서 공유하고, 브라우저에 저장해 새로고침 후에도 이어서 볼 수 있도록 구현했습니다." },
+                        { id: "booklog-supabase", name: "- Supabase로 회원 인증을 구현하고, 로그인 후 설정에서 서재 기록을 계정으로 옮기거나 다른 기기에서 불러올 수 있도록 구성" },
+                        { id: "booklog-vercel", name: "- Vercel에 앱을 배포하고, 서버 함수를 통해 카카오 도서 검색 API와 연동" },
+                      ],
+                    },
+                  ]}
+                />
+              </div>
+            )
+          }
+        >
+          <UITable.Default className="mt-4" variant="type1" size="md" align="left">
+            <UITable.Table>
+              <UITable.Caption>북로그 프로젝트 기간, 사용 툴, 웹주소, 저장소</UITable.Caption>
+              <UITable.Tbody>
+                <UITable.Tr>
+                  <UITable.Th scope="row">프로젝트 기간</UITable.Th>
+                  <UITable.Td>2026. 11. ~</UITable.Td>
+                </UITable.Tr>
+                <UITable.Tr>
+                  <UITable.Th scope="row">사용 툴</UITable.Th>
+                  <UITable.Td>Claude AI, React, TypeScript, Vite, SCSS Modules, Supabase, Vercel</UITable.Td>
+                </UITable.Tr>
+                <UITable.Tr>
+                  <UITable.Th scope="row">웹주소</UITable.Th>
+                  <UITable.Td><a href="https://booklog-azure.vercel.app/" target="_blank" rel="noopener noreferrer">https://booklog-azure.vercel.app/</a></UITable.Td>
+                </UITable.Tr>
+                <UITable.Tr>
+                  <UITable.Th scope="row">저장소</UITable.Th>
+                  <UITable.Td><a href="https://github.com/i-sohyeon/booklog" target="_blank" rel="noopener noreferrer">GitHub에서 보기</a></UITable.Td>
+                </UITable.Tr>
+              </UITable.Tbody>
+            </UITable.Table>
+          </UITable.Default>
+          <UIBadge.Group>
+            <UIBadge size="md" variant="line" color="white">#바이브코딩</UIBadge>
+            <UIBadge size="md" variant="line" color="white">#Claude AI</UIBadge>
+            <UIBadge size="md" variant="line" color="white">#React · TypeScript</UIBadge>
+            <UIBadge size="md" variant="line" color="white">#Supabase</UIBadge>
+            <UIBadge size="md" variant="line" color="white">#Vercel</UIBadge>
+          </UIBadge.Group>
+        </SlideItem>
+      ),
+    },
+
+    {
       id: "wooribank",
       categories: ["publishing"],
       content: (
@@ -1161,7 +1254,8 @@ function Home() {
                 <UIBadge variant="solid" size="md" bgColor="white">Storybook</UIBadge>
                 <UIBadge variant="solid" size="md" bgColor="white">Chat GPT</UIBadge>
                 <UIBadge variant="solid" size="md" bgColor="white">Codex</UIBadge>
-                <UIBadge variant="solid" size="md" bgColor="white">Cursor</UIBadge>
+                <UIBadge variant="solid" size="md" bgColor="white">Claude</UIBadge>
+                <UIBadge variant="solid" size="md" bgColor="white">Lovable</UIBadge>
               </UIBadge.Group>
             </UIBox.Div>
           </UIBox.Div>

@@ -4,9 +4,9 @@
 ---
 
 ## 🔗 Live Demo & Links
-* **배포 주소**: [https://i-sohyeon.github.io/portfolio_vite/](https://i-sohyeon.github.io/portfolio_vite/)
-* **GitHub 저장소**: [[https://github.com/your-username/repository-name](https://github.com/i-sohyeon/portfolio_vite)](https://github.com/your-username/repository-name)
-* **실행 방법** : [https://github.com/i-sohyeon/portfolio_vite/blob/main/GETTING_STARTED.md](https://github.com/i-sohyeon/portfolio_vite/blob/main/GETTING_STARTED.md)
+* **배포 주소**: [https://i-sohyeon.github.io/pixel-to-code/](https://i-sohyeon.github.io/pixel-to-code/)
+* **GitHub 저장소**: [[https://github.com/i-sohyeon/pixel-to-code](https://github.com/i-sohyeon/pixel-to-code)](https://github.com/your-username/repository-name)
+* **실행 방법** : [https://github.com/i-sohyeon/pixel-to-code/blob/main/GETTING_STARTED.md](https://github.com/i-sohyeon/pixel-to-code/blob/main/GETTING_STARTED.md)
 * **컴포넌트 스토리북** : [https://main--6a1c0e1b70232ec461f8711c.chromatic.com/](https://main--6a1c0e1b70232ec461f8711c.chromatic.com/)
   * 스토리북은 현재 업데이트중입니다.
   
